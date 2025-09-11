@@ -41,3 +41,5 @@ export default function Preview({ general, education, experience, skills }) {
     </div>
   );
 }
+
+console.log("Hi, my name is Hannah");

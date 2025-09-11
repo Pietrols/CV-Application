@@ -1,0 +1,67 @@
+.cv-preview {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Styles for the main sections of the CV */
+.general-info-section {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.general-info-section h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #1a202c;
+  font-weight: 700;
+}
+
+.general-info-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.preview-section {
+  margin-bottom: 30px;
+}
+
+.preview-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+/* Print styles to ensure the preview looks good when printed as a PDF */
+@media print {
+  body {
+    background: none;
+  }
+  .app-container,
+  .preview-wrapper,
+  .buttons {
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
+  .buttons,
+  .download-btn,
+  .edit-btn {
+    display: none !important;
+  }
+  .cv-preview {
+    box-shadow: none;
+    margin: 0;
+  }
+}
